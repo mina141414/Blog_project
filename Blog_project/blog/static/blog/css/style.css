@@ -1,0 +1,40 @@
+.header{
+    text-align: center;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+h1{
+    font-weight: 600;
+    color: #fff;
+    background-color: #00f;
+    width: 70%;
+    margin: 0 auto 15px auto;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    background-color: #00f;
+}
+
+.p1{
+    font-size: 0.8em;
+    line-height: 0.7;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+
+.title:before{
+    content: url("/static/blog/images/Chelsea.png");
+    position: relative;
+    top: 10px;
+    margin:  10px 10px 0;
+
+}

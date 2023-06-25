@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
+</head>
+<body>
+    <img src="{% static 'blog/images/Blog_header.jpeg' %}" >
+    <div class="container">
+    <h1>Chelsea information</h1>
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.text|linebreaks }}</p>
+    <img src="{{ post.image.url }}" width="300" height="384">
+    <p>投稿日: {{ post.posted_at }}</p>
+    <p>更新日: {{ post.updated_at }}</p>    
+    <p><a href="{% url 'index' %}">記事一覧に戻る</a></p>
+    <hr />
+    </div>
+</body>
+</html>
